@@ -1,0 +1,1 @@
+Digital Electronics and Microprocessors is a course divided in two parts: the first part consists on applying the learnt theory of digital circuits to design such hardware components in VHDL; the second part is about dealing with microprocessors.

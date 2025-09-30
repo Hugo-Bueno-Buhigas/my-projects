@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.6)
+project(main)
+
+include_directories(${CMAKE_SOURCE_DIR}/include)
+add_executable(lbp_extraxtor main.c ${CMAKE_SOURCE_DIR}/src/classifier.c )
+target_link_libraries(lbp_extraxtor m)

@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.6)
+project(main)
+
+# Agregar el ejecutable
+add_executable(lbp_extraxtor main.c LBPFeatures.c)
+target_link_libraries(lbp_extraxtor m)

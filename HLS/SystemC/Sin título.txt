@@ -1,0 +1,21 @@
+#ifndef MUX_H
+#define MUX_H
+#include <systemc.h>
+
+SC_MODULE(LBPFeatures){
+	public:
+		sc_in<int> pixels[IMG_WIDTH*IMG_WIDTH];
+		sc_out<int> features[HISTOGRAM_WIDTH];
+
+		void Mux_behaviour();
+
+	SC_CTOR(LBPFeatures){
+		SC_METHOD(Mux_behaviour);
+		sensitive << pixels;    // ¿Hay que poner los corchetes?
+
+
+	}
+
+};
+
+#endif
